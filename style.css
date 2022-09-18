@@ -1,0 +1,22 @@
+.d-country {
+    border: 3px solid rgb(141, 30, 30);
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 350px;
+    /* margin: 20px; */
+
+}
+
+.d-country img {
+    width: 200px;
+}
+
+.countrys {
+    border: 2px solid yellow;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    min-width: 100%;
+}
