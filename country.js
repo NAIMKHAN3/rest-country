@@ -4,7 +4,6 @@ const loadCountry = () => {
         .then(data => displayCountrys(data));
 }
 const displayCountrys = countrys => {
-    console.log(countrys[0]);
     const allCountrys = countrys.map(country => getCoutry(country))
     const container = document.getElementById('countrys');
     container.innerHTML = allCountrys.join(' ');
@@ -15,6 +14,7 @@ const getCoutry = country => {
     return `
     <div class="d-country">
     <h1>${country.name.common}</h1>
+    <h2>Area:${country.area}</h2>
     <img src="${country.flags.png}">
     <h2>${country.capital}</h2>
     <h3>Flag: ${country.flag}</h3>
